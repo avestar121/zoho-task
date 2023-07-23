@@ -54,7 +54,7 @@ consts.refresMainAccounts()
     <Sidebar />
 
     <Section>
-      <template v-slot:header>
+      <template >
         <!-- content for the header slot -->
         <div v-if="mainCmpN==='dashboard'">
 

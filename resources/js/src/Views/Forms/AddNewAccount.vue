@@ -19,13 +19,26 @@ const form = useForm({
 
 const submit = (_onSuccess) => {
    consts.setStateDlgLoaded(true)
-   useAccounts().create({ ...form }).then((data) => {
-      consts.setStateDlgLoaded(false)
-      consts.refresMainAccounts()
-      _onSuccess()
-      consts.notyf.success(`The app has successfully created the account with ID:${form.Account_Name}`)
-   }).catch(e => { consts.setStateDlgLoaded(false) })
+   useAccounts().create({ ...form })
+      .then((data) => {
+         consts.setStateDlgLoaded(false)
+         consts.refresMainAccounts()
+         _onSuccess()
+         consts.notyf.success(`The app has successfully created the account with ID:${form.Account_Name}`)
+      })
+      .catch(error => {
+         consts.setStateDlgLoaded(false)
+         console.log('Error Object:', error);
+
+         if (error.response && error.response.data && error.response.data.error === 'An account with the same name already exists. Please use a different name.') {
+            consts.notyf.error('An account with the same name already exists. Please use a different name.')
+         } else {
+            consts.notyf.error('Error creating the account. Please try again later.')
+         }
+      });
 }
+
+
 
 defineExpose({ onSubmit: submit })
 </script>

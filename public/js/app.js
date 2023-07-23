@@ -25808,11 +25808,11 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   },
   "xml:space": "preserve"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tspan", {
-  x: "100.90248",
+  x: "170.90248",
   y: "38.447517",
   stroke: "#d9ec9a",
   "stroke-width": "1.3"
-}, "The Best")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("text", {
+}, "The Best CRM")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("text", {
   transform: "scale(1.3921 .71832)",
   x: "166.5378",
   y: "48.770359",
@@ -25830,7 +25830,7 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   y: "48.770359",
   "font-family": "'Amiri Quran'",
   "stroke-width": "3.1465"
-}, "ever!")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("text", {
+}, "")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("text", {
   xmlns: "http://www.w3.org/2000/svg",
   transform: "matrix(1.0464 0 0 .49566 60.7 35.633)",
   x: "78.971931",
@@ -25846,7 +25846,7 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
     "white-space": "pre"
   },
   "xml:space": "preserve"
-}, "CRM")], -1 /* HOISTED */);
+}, "")], -1 /* HOISTED */);
 var _hoisted_5 = [_hoisted_2, _hoisted_3, _hoisted_4];
 function render(_ctx, _cache) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, _hoisted_5);
